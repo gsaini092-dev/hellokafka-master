@@ -37,3 +37,27 @@ bin/kafka-topics.sh --bootstrap-server localhost:2181 --describe
 
 ## Delete topics
 bin/kafka-topics.sh --bootstrap-server localhost:2181 --topic myfirstTopic --delete
+
+
+# For Windows Installation:
+Step 1.
+First need to Start Zoopkeepr & Kafka Server  ,
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+Step 2.
+Create your own Topic 
+
+.\bin\windows\kafka-topics.bat --create --partitions 1 --replication-factor 1 –topic  first-topic --bootstrap-server localhost:9092
+
+
+Step 3. For sperate CMD(create producer)
+
+.\bin\windows\kafka-console-producer.bat --topic  first-topic --bootstrap-server localhost:9092
+
+Step 4. For separate CMD(create consumer)
+.\bin\windows\kafka-console-consumer.bat –topic first-topic --from-beginning --bootstrap-server localhost:9092
+
+Then --------------------------Ready To USE KAFKA--------------------------------------
+
+
