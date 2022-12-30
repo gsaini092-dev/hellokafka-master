@@ -5,6 +5,7 @@
 ```
 cd kafka_2.12-3.0.0
 ```
+# For Mac OS
 
 ## Run the zookeeper & kafka server
 ```
