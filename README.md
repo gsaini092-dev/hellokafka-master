@@ -44,6 +44,7 @@ bin/kafka-topics.sh --bootstrap-server localhost:2181 --topic myfirstTopic --del
 Step 1.
 First need to Start Zoopkeepr & Kafka Server  ,
 .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
 .\bin\windows\kafka-server-start.bat .\config\server.properties
 
 Step 2.
